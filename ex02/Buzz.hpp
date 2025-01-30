@@ -8,4 +8,10 @@
 #ifndef BUZZ_HPP
     #define BUZZ_HPP
 
+    #include "Toy.hpp"
+
+class Buzz : public Toy
+{
+    Buzz(std::string name, std::string ascii="buzz.txt");
+};
 #endif //BUZZ_HPP
