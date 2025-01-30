@@ -26,7 +26,7 @@ class Toy
         std::string getName() const { return this->_name; }
         void setName(const std::string name) { this->_name = name; }
         std::string getAscii() { return this->_picture.data; }
-        bool setAscii(const std::string file) { this->_picture.getPictureFromFile(file); }
+        bool setAscii(const std::string file) { return this->_picture.getPictureFromFile(file); }
 
     protected:
         const ToyType _type;
