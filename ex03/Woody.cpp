@@ -12,7 +12,7 @@
 Woody::Woody(const std::string name, const std::string ascii)
     : Toy(WOODY, name, ascii) {}
 
-void Woody::speak(std::string statement) const
+void Woody::speak(std::string statement)
 {
     std::cout << "WOODY: " << this->getName() << " " << statement;
 }

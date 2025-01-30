@@ -12,7 +12,7 @@
 Buzz::Buzz(const std::string name, const std::string ascii)
     : Toy(BUZZ, name, ascii) {}
 
-void Buzz::speak(std::string statement) const
+void Buzz::speak(std::string statement)
 {
     std::cout << "BUZZ: " << this->getName() << " " << statement;
 }

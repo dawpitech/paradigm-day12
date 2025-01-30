@@ -35,7 +35,7 @@ class Toy
         void setName(const std::string name) { this->_name = name; }
         std::string getAscii() const { return this->_picture.data; }
         bool setAscii(const std::string file) { return this->_picture.getPictureFromFile(file); }
-        virtual void speak(std::string statement) const;
+        virtual void speak(std::string statement);
 
     protected:
         ToyType _type;

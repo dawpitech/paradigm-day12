@@ -14,6 +14,6 @@ class Woody : public Toy
 {
     public:
         Woody(std::string name, std::string ascii="woody.txt");
-        void speak(std::string statement) const override;
+        void speak(std::string statement) override;
 };
 #endif //WOODY_HPP
