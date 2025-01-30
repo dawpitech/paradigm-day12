@@ -14,5 +14,5 @@ Woody::Woody(const std::string name, const std::string ascii)
 
 void Woody::speak(std::string statement)
 {
-    std::cout << "WOODY: " << this->getName() << " " << statement;
+    std::cout << "WOODY: " << this->getName() << " \"" << statement << "\"" << std::endl;
 }

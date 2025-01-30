@@ -14,5 +14,5 @@ Buzz::Buzz(const std::string name, const std::string ascii)
 
 void Buzz::speak(std::string statement)
 {
-    std::cout << "BUZZ: " << this->getName() << " " << statement;
+    std::cout << "BUZZ: " << this->getName() << " \"" << statement << "\"" << std::endl;
 }

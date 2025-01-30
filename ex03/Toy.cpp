@@ -37,5 +37,5 @@ Toy& Toy::operator=(Toy&& other) noexcept
 
 void Toy::speak(const std::string statement)
 {
-    std::cout << this->getName() << " " << statement;
+    std::cout << this->getName() << " \"" << statement << "\"" << std::endl;
 }
