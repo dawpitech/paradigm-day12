@@ -10,12 +10,12 @@
 
 #include "Picture.hpp"
 
-Picture::Picture(Picture&& other)
+Picture::Picture(Picture&& other) noexcept
 {
     this->data = std::move(other.data);
 }
 
-Picture& Picture::operator=(Picture&& other)
+Picture& Picture::operator=(Picture&& other) noexcept
 {
     this->data = std::move(other.data);
     return *this;

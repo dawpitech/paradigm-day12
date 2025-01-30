@@ -23,10 +23,10 @@ class Toy
         Toy();            // basic constructor
         ~Toy() = default; // basic destructor
         Toy(ToyType type, std::string name, std::string file); // full constructor
-        Toy(const Toy& toy) = default;        // copy constructor
-        Toy(Toy&& other) noexcept;              // move constructor
-        Toy& operator=(const Toy& other);       // assignment operator
-        Toy& operator=(Toy&& other) noexcept; // move operator
+        Toy(const Toy& toy) = default;              // copy constructor
+        Toy(Toy&& other) noexcept;                  // move constructor
+        Toy& operator=(const Toy& other) = default; // assignment operator
+        Toy& operator=(Toy&& other) noexcept;       // move operator
 
         ToyType getType() const { return this->_type; }
         std::string getName() const { return this->_name; }
