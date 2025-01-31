@@ -11,7 +11,7 @@
 
 Toy::Toy()
     : _type(BASIC_TOY)
-    , _name("Toy") {}
+    , _name("toy") {}
 
 Toy::Toy(ToyType type, std::string name, std::string file)
     : _type(type)
