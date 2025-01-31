@@ -12,6 +12,7 @@
 
 class Woody : public Toy
 {
-    Woody(std::string name, std::string ascii="woody.txt");
+    public:
+        Woody(std::string name, std::string ascii="woody.txt");
 };
 #endif //WOODY_HPP

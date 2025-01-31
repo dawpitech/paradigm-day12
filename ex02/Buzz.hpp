@@ -12,6 +12,7 @@
 
 class Buzz : public Toy
 {
-    Buzz(std::string name, std::string ascii="buzz.txt");
+    public:
+        Buzz(std::string name, std::string ascii="buzz.txt");
 };
 #endif //BUZZ_HPP
